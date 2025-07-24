@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing-page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+</head>
+
+<body class="h-600 overflow-x-hidden">
+
+    <div class="mx-[204px]">
+        <!-- navbar -->
+        <nav class="bg-white pt-[61px] rounded-2xl" onscroll="myFunction()">
+            <div class="flex justify-between items-center">
+                <img src="/assets/images/Group 16 (1).png" alt="">
+
+                <ul class="flex justify-between gap-7.5 font-medium text-[#3E3232] text-[16px]">
+                    <div class="flex items-center gap-1">
+                        <li class=""><a href="#kategori">Kategori</a></li>
+                    </div>
+                    <li class=""><a href="#kursus">Kursus</a></li>
+                    <li class=""><a href="#">Kontak Kami</a></li>
+                    <li class=""><a href="#tentang">Tentang Kami</a></li>
+                </ul>
+
+                <div class="flex items-center gap-15 bg-[#FAFAFA]">
+                    <input type="text" placeholder="Cari Sesuatu..."
+                        class="py-6 pl-4 focus:outline-none font-medium text-[13px]">
+                    <svg class="mr-5" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.5312 18.3438C21.1172 18.9688 21.1172 19.9453 20.5312 20.5703C19.9062 21.1562 18.9297 21.1562 18.3047 20.5703L13.6562 15.8828C12.0547 16.9375 10.1016 17.4844 7.99219 17.2109C4.39844 16.7031 1.50781 13.7734 1.03906 10.2188C0.375 4.90625 4.86719 0.414062 10.1797 1.07812C13.7344 1.54688 16.6641 4.4375 17.1719 8.03125C17.4453 10.1406 16.8984 12.0938 15.8438 13.6562L20.5312 18.3438ZM4.08594 9.125C4.08594 11.8984 6.3125 14.125 9.08594 14.125C11.8203 14.125 14.0859 11.8984 14.0859 9.125C14.0859 6.39062 11.8203 4.125 9.08594 4.125C6.3125 4.125 4.08594 6.39062 4.08594 9.125Z"
+                            fill="#080808" fill-opacity="0.25" />
+                    </svg>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="/assets/images/IMG_03999 1.jpg" alt="" class="rounded-xl">
+                    <div class="flex flex-col gap-1 font-medium">
+                        <h5>Behzad pashaei</h5>
+                        <h6 class="text-gray-600">ui & ux designer</h6>
+
+
+                    </div>
+                    <svg class="ml-3 cursor-pointer" width="64" height="64" viewBox="0 0 64 64" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="12" fill="#9E5CF2" fill-opacity="0.05" />
+                        <path
+                            d="M33.25 23.25V24.0312C36.1016 24.6172 38.25 27.1172 38.25 30.125V30.8672C38.25 32.7031 38.9141 34.5 40.125 35.8672L40.3984 36.1797C40.75 36.5703 40.8281 37.0781 40.6328 37.5469C40.4375 37.9766 39.9688 38.25 39.5 38.25H24.5C23.9922 38.25 23.5234 37.9766 23.3281 37.5469C23.1328 37.0781 23.2109 36.5703 23.5625 36.1797L23.8359 35.8672C25.0469 34.5 25.75 32.7031 25.75 30.8672V30.125C25.75 27.1172 27.8594 24.6172 30.75 24.0312V23.25C30.75 22.5859 31.2969 22 32 22C32.6641 22 33.25 22.5859 33.25 23.25ZM32 42C31.3359 42 30.6719 41.7656 30.2031 41.2969C29.7344 40.8281 29.5 40.1641 29.5 39.5H34.5C34.5 40.1641 34.2266 40.8281 33.7578 41.2969C33.2891 41.7656 32.625 42 32 42Z"
+                            fill="#9E5CF2" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar -->
+
+        <hr class="-mx-[200px] mt-7.5 border-1 border-gray-300 w-[1920px]">
+
+        <!-- hero -->
+        <section class="mt-[59px]">
+            <div class="">
+                <div class="flex items-center gap-12 overflow-x-hidden slider" data-glide-el="track">
+                    <div class="flex gap-4 track">
+                        <img src="/assets/images/categorie-icon.png" alt="">
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">Python</h5>
+                        </a>
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">React</h5>
+                        </a>
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">Unity</h5>
+                        </a>
+                    </div>
+                    <div class="flex gap-4 track">
+                        <img src="/assets/images/categorie-icon (1).png" alt="">
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">ui & ux</h5>
+                        </a>
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">vector</h5>
+                        </a>
+                    </div>
+                    <div class="flex gap-4 track">
+                        <img src="/assets/images/categorie-icon (2).png" alt="">
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">After Effects</h5>
+                        </a>
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">Lightroom</h5>
+                        </a>
+                        <a href="">
+                            <h5 class="bg-gray-100 px-8 py-[23px] rounded-xl font-medium">Photography</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex mt-[110px]">
+                <div class="flex flex-col gap-[48.89px]">
+                    <p class="mt-[82.11px] w-[650px] font-bold text-[40px]">
+                        Tingkatkan keterampilan di dunia teknologi bersama <a
+                            class="bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 text-transparent">ACADEMY</a>
+                        — platform belajar interaktif untuk menguasai berbagai bidang IT secara efisien, fleksibel, dan
+                        terarah.
+                    </p>
+                    <div class="flex items-center gap-8">
+                        <a href="" class="flex items-center gap-2 bg-black p-[22px] rounded-2xl w-fit text-white">
+                            Mulai Belajar
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+
+                        <img src="/assets/images/booked.png" alt="">
+                    </div>
+
+                </div>
+
+                <img src="/assets/images/image.png" alt="">
+            </div>
+        </section>
+        <!-- hero -->
+
+
+        <!-- kategori -->
+        <section id="kategori" class="mt-[150px]">
+            <h1 class="font-bold text-[36px]">
+                <center>Kategori Kursus Di <span
+                        class="bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 text-transparent">ACADEMY</span>
+                </center>
+            </h1>
+            <div class="gap-20 grid grid-cols-3 mt-15">
+                <div
+                    class="block shadow-2xl hover:shadow-green-400 px-4 py-[23px] rounded-xl hover:outline-1 hover:outline-green-400 hover:scale-105 transition duration-500 ease-in-out cursor-pointer hover:transform">
+                    <center>
+                        <svg width="200" height="200" viewBox="0 0 67 67" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="67" height="67" rx="12" fill="#EBFAF5" />
+                            <path
+                                d="M36.1514 21.9613C36.3673 21.9712 36.5786 22.0293 36.7686 22.1313C36.9584 22.2332 37.122 22.3768 37.248 22.5502C37.3741 22.7236 37.4587 22.923 37.4961 23.1332C37.5334 23.3433 37.5224 23.5588 37.4639 23.7641L37.4629 23.768L32.0146 43.9272L32.0117 43.9369C31.9689 44.1225 31.8891 44.2981 31.7764 44.4526C31.6636 44.6069 31.5203 44.7369 31.3555 44.8354C31.1904 44.9339 31.0064 44.9991 30.8154 45.0258C30.6246 45.0524 30.4303 45.0401 30.2441 44.9906C30.058 44.9411 29.884 44.8553 29.7324 44.7377C29.5808 44.62 29.4543 44.4729 29.3613 44.3061C29.2684 44.1393 29.2101 43.9554 29.1904 43.766C29.1708 43.5768 29.1896 43.3854 29.2461 43.2035H29.2471L29.249 43.1947L34.6943 23.0356L34.6953 23.0317C34.7702 22.7385 34.9377 22.4761 35.1738 22.2836C35.3806 22.1152 35.6304 22.0079 35.8945 21.9731L36.0088 21.9623C36.0561 21.9597 36.104 21.9593 36.1514 21.9613ZM40.291 24.2631C40.4823 24.2636 40.6717 24.3013 40.8477 24.3754C41.0239 24.4496 41.1834 24.5586 41.3164 24.6947L41.3193 24.6977L48.832 32.144C49.1 32.4101 49.25 32.7707 49.25 33.1459C49.25 33.5212 49.1 33.8817 48.832 34.1479L41.3193 41.5971L41.3125 41.6039C41.1817 41.744 41.0236 41.8567 40.8477 41.935C40.6716 42.0133 40.4811 42.0563 40.2881 42.06C40.0951 42.0636 39.9035 42.028 39.7246 41.9565C39.5457 41.8849 39.3833 41.7781 39.2471 41.643C39.1109 41.5079 39.0035 41.3472 38.9316 41.1703C38.8599 40.9935 38.8244 40.8042 38.8281 40.6137C38.8319 40.4232 38.8744 40.2349 38.9531 40.061C39.0318 39.8871 39.1449 39.7297 39.2861 39.6L39.2871 39.601L39.2939 39.5942L45.6133 33.3227L45.792 33.1449L45.6133 32.9682L39.2939 26.7006L39.292 26.6987L39.2178 26.6225C39.0531 26.4385 38.9399 26.2145 38.8887 25.9731C38.8302 25.6972 38.856 25.4102 38.9629 25.1488C39.0698 24.8876 39.2529 24.6632 39.4893 24.5053C39.6964 24.367 39.9365 24.2852 40.1846 24.267L40.291 24.2631ZM26.6641 24.2621H26.665C26.9544 24.253 27.2398 24.3313 27.4834 24.4858C27.7269 24.6402 27.9167 24.8642 28.0293 25.1274C28.1419 25.3907 28.1715 25.6821 28.1143 25.9623C28.0569 26.2423 27.9153 26.4993 27.708 26.6987L27.7061 26.7006L21.3828 32.9682L21.2041 33.1449L21.3828 33.3227L27.7061 39.5942C27.8387 39.726 27.9439 39.8823 28.0156 40.0541C28.0874 40.2262 28.1242 40.411 28.124 40.5971C28.1239 40.7831 28.0866 40.9672 28.0146 41.1391C27.9426 41.3111 27.8372 41.4682 27.7041 41.6C27.5711 41.7316 27.4132 41.8363 27.2393 41.9076C27.0651 41.979 26.878 42.0153 26.6895 42.0151C26.5011 42.0149 26.3145 41.9783 26.1406 41.9067C25.9667 41.835 25.8086 41.7292 25.6758 41.5971L18.168 34.1479C17.9 33.8817 17.75 33.5212 17.75 33.1459C17.75 32.7707 17.9 32.4101 18.168 32.144L25.6758 24.6977L25.6787 24.6947C25.9377 24.4294 26.291 24.2735 26.6641 24.2621Z"
+                                fill="#009E68" stroke="#EBFAF5" stroke-width="0.5" />
+                        </svg>
+                        <h1 class="mt-6 font-bold text-[24px]">Website Development</h1>
+                        <p class="mt-4 font-medium text-[14px] text-gray-400">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    </center>
+                </div>
+                <div
+                    class="block shadow-2xl hover:shadow-violet-400 px-4 py-[23px] rounded-xl hover:outline-1 hover:outline-violet-400 hover:scale-105 transition duration-500 ease-in-out cursor-pointer hover:transform">
+                    <center>
+                        <svg width="200" height="200" viewBox="0 0 67 67" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="67" height="67" rx="12" fill="#9E5CF2" fill-opacity="0.05" />
+                            <path
+                                d="M34.3393 25.5198C33.9964 24.8314 33.0068 24.8248 32.6607 25.5198L26.0982 38.7073C25.9493 39.0064 25.9709 39.3621 26.1548 39.641L29.75 45.0937V48.5625C29.75 49.0802 30.1697 49.5 30.6875 49.5H36.3125C36.8302 49.5 37.25 49.0802 37.25 48.5625V45.0937L40.8451 39.641C41.029 39.3621 41.0506 39.0064 40.9017 38.7073L34.3393 25.5198ZM35.375 47.625H31.625V45.75H35.375V47.625ZM35.8077 43.875H31.1923L28.0173 39.0595L32.5625 29.9257V39.125C32.5625 39.6427 32.9822 40.0625 33.5 40.0625C34.0177 40.0625 34.4375 39.6427 34.4375 39.125V29.9257L38.9827 39.0595L35.8077 43.875Z"
+                                fill="#9E5CF2" />
+                            <path
+                                d="M46.6875 17.5C45.4653 17.5 44.4232 18.2838 44.0362 19.375H36.3125V18.4375C36.3125 17.9197 35.8927 17.5 35.375 17.5H31.625C31.1073 17.5 30.6875 17.9197 30.6875 18.4375V19.375H22.9637C22.5767 18.2838 21.5347 17.5 20.3125 17.5C18.7617 17.5 17.5 18.7617 17.5 20.3125C17.5 21.8633 18.7617 23.125 20.3125 23.125C21.5347 23.125 22.5767 22.3406 22.9637 21.2494H26.4708C22.1023 23.7582 19.375 28.3929 19.375 33.4375C19.375 33.9552 19.7947 34.375 20.3125 34.375C20.8303 34.375 21.25 33.9552 21.25 33.4375C21.25 27.781 25.2374 22.8612 30.6875 21.5761V22.1875C30.6875 22.7052 31.1073 23.125 31.625 23.125H35.375C35.8927 23.125 36.3125 22.7052 36.3125 22.1875V21.5761C41.7626 22.8612 45.75 27.781 45.75 33.4375C45.75 33.9552 46.1698 34.375 46.6875 34.375C47.2052 34.375 47.625 33.9552 47.625 33.4375C47.625 28.3994 44.9031 23.7619 40.5292 21.25H44.0362C44.4232 22.3412 45.4653 23.125 46.6875 23.125C48.2383 23.125 49.5 21.8633 49.5 20.3125C49.5 18.7617 48.2383 17.5 46.6875 17.5ZM20.3125 21.25C19.7956 21.25 19.375 20.8294 19.375 20.3125C19.375 19.7956 19.7956 19.375 20.3125 19.375C20.8294 19.375 21.25 19.7956 21.25 20.3125C21.25 20.8294 20.8294 21.25 20.3125 21.25ZM34.4375 21.25H32.5625V19.375H34.4375V21.25ZM46.6875 21.25C46.1706 21.25 45.75 20.8294 45.75 20.3125C45.75 19.7956 46.1706 19.375 46.6875 19.375C47.2044 19.375 47.625 19.7956 47.625 20.3125C47.625 20.8294 47.2044 21.25 46.6875 21.25Z"
+                                fill="#9E5CF2" />
+                        </svg>
+
+                        <h1 class="mt-6 font-bold text-[24px]">UI/UX Designer</h1>
+                        <p class="mt-4 font-medium text-[14px] text-gray-400">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    </center>
+                </div>
+                <div
+                    class="block shadow-2xl hover:shadow-red-500 px-4 py-[23px] rounded-xl hover:outline-1 hover:outline-red-500 hover:scale-105 transition duration-500 ease-in-out cursor-pointer hover:transform">
+                    <center>
+                        <svg width="200" height="200" viewBox="0 0 67 67" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="67" height="67" rx="12" fill="#FFF5F5" />
+                            <path
+                                d="M40.5698 27.5117C40.5698 25.2376 38.7376 23.3947 36.4767 23.3947H21.593C19.3322 23.3947 17.5 25.2376 17.5 27.5117V39.4883C17.5 41.7624 19.3322 43.6053 21.593 43.6053H36.4767C38.7376 43.6053 40.5698 41.7624 40.5698 39.4883V27.5117ZM38.3372 27.5117V39.4883C38.3372 40.5213 37.5037 41.3597 36.4767 41.3597H21.593C20.566 41.3597 19.7326 40.5213 19.7326 39.4883V27.5117C19.7326 26.4787 20.566 25.6404 21.593 25.6404H36.4767C37.5037 25.6404 38.3372 26.4787 38.3372 27.5117Z"
+                                fill="#FF3C31" />
+                            <path
+                                d="M49.4999 39.8761V27.124C49.4999 26.1854 49.0013 25.32 48.1932 24.853C47.3835 24.3844 46.3878 24.3889 45.5826 24.8604C42.9377 26.4129 38.8908 28.7873 38.8908 28.7873C38.5485 28.9894 38.3372 29.3577 38.3372 29.7574V37.2428C38.3372 37.6425 38.5485 38.0108 38.8908 38.2129C38.8908 38.2129 42.9377 40.5872 45.5826 42.1397C46.3878 42.6113 47.3835 42.6158 48.1932 42.1472C49.0013 41.6801 49.4999 40.8148 49.4999 39.8761ZM47.2674 27.124V39.8761C47.2674 40.0108 47.1959 40.1336 47.0813 40.201C46.9653 40.2668 46.8224 40.2668 46.7078 40.1995L40.5697 36.5975V30.4026L46.7078 26.8006C46.8224 26.7333 46.9653 26.7333 47.0813 26.7992C47.1959 26.8665 47.2674 26.9893 47.2674 27.124Z"
+                                fill="#FF3C31" />
+                            <path
+                                d="M33.5001 27.8859H30.5234C29.9072 27.8859 29.4071 28.3889 29.4071 29.0087C29.4071 29.6285 29.9072 30.1315 30.5234 30.1315H33.5001C34.1163 30.1315 34.6164 29.6285 34.6164 29.0087C34.6164 28.3889 34.1163 27.8859 33.5001 27.8859Z"
+                                fill="#FF3C31" />
+                        </svg>
+
+
+                        <h1 class="mt-6 font-bold text-[24px]">Videe Editor</h1>
+                        <p class="mt-4 font-medium text-[14px] text-gray-400">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    </center>
+                </div>
+            </div>
+        </section>
+        <!-- kategori -->
+
+
+        <!-- search -->
+        <section class="flex flex-col items-center gap-8 mt-[150px]">
+            <h1 class="max-w-[590px] font-bold text-[36px] text-center">Temukan Sebanyak <span
+                    class="bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 text-transparent">58340</span>
+                Pelatihan Dan Kursus</h1>
+
+            <div class="flex items-center gap-4">
+                <div class="flex justify-between items-center bg-[#FAFAFA] w-[744px]">
+                    <div class="gap-4 pl-4">
+                        <a href="" class="bg-black px-6 py-2.5 rounded-2xl text-[14px] text-white">Kategori</a>
+                        <input type="text" placeholder="Cari Kursus..."
+                            class="py-[25px] focus:outline-none w-140 font-medium text-[13px]">
+                    </div>
+
+                    <svg class="mr-5" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.5312 18.3438C21.1172 18.9688 21.1172 19.9453 20.5312 20.5703C19.9062 21.1562 18.9297 21.1562 18.3047 20.5703L13.6562 15.8828C12.0547 16.9375 10.1016 17.4844 7.99219 17.2109C4.39844 16.7031 1.50781 13.7734 1.03906 10.2188C0.375 4.90625 4.86719 0.414062 10.1797 1.07812C13.7344 1.54688 16.6641 4.4375 17.1719 8.03125C17.4453 10.1406 16.8984 12.0938 15.8438 13.6562L20.5312 18.3438ZM4.08594 9.125C4.08594 11.8984 6.3125 14.125 9.08594 14.125C11.8203 14.125 14.0859 11.8984 14.0859 9.125C14.0859 6.39062 11.8203 4.125 9.08594 4.125C6.3125 4.125 4.08594 6.39062 4.08594 9.125Z"
+                            fill="#080808" fill-opacity="0.25" />
+                    </svg>
+                </div>
+                <h5 class="font-medium text-gray-400">Atau lihat kursus lainnya...</h5>
+            </div>
+
+        </section>
+        <!-- search -->
+
+
+        <!-- kursus -->
+        <section id="kursus" class="mt-[150px]">
+            <div class="flex justify-between items-center">
+                <h4 class="font-bold">
+                    Pelatihan & Kursus
+                </h4>
+                <div class="items-center gap-[35px]">
+                    <a href="" class="bg-gray-100 px-6 py-2.5 rounded-xl font-medium text-[14px]">Semua Pelatihan</a>
+                    <a href="" class="hover:bg-gray-100 px-6 py-2.5 rounded-xl font-medium text-[14px]">Design</a>
+                    <a href="" class="hover:bg-gray-100 px-6 py-2.5 rounded-xl font-medium text-[14px]">Development</a>
+                    <a href="" class="hover:bg-gray-100 px-6 py-2.5 rounded-xl font-medium text-[14px]">Photography</a>
+                    <a href="" class="hover:bg-gray-100 px-6 py-2.5 rounded-xl font-medium text-[14px]">Music</a>
+                    <span class="ml-3 text-gray-400 fa fa-filter"></span>
+                </div>
+
+
+
+            </div>
+            <div class="gap-6 grid grid-cols-4 mt-[43px]">
+                <!-- card -->
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-xl w-fit hover:scale-105 duration-700 cursor-pointer hover:transform">
+                    <div class="flex flex-col gap-4 px-2.5 pt-2.5">
+                        <img src="/assets/images/unsplash_7uSKXpksCKg.png" class="rounded-xl" alt="">
+                        <h5 class="font-medium">Belajar Figma - UI/UX Design Latihan Dasar</h5>
+                        <div class="flex items-center gap-7.5 text-sm">
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 10.5C14 10.9688 13.7812 11.3438 13.5 11.625V14.1562C13.7812 14.3438 14 14.6562 14 15C14 15.5625 13.5312 16 13 16H3C1.3125 16 0 14.6875 0 13V3C0 1.34375 1.3125 0 3 0H6V6C6 6.4375 6.46875 6.65625 6.78125 6.40625L8.5 5L10.1875 6.375C10.5 6.625 11 6.40625 11 6V0H12.5C13.3125 0 14 0.6875 14 1.5V10.5ZM12 14V12H3C2.4375 12 2 12.4688 2 13C2 13.5625 2.4375 14 3 14H12Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+                                <h6 class="font-medium text-gray-400">Pelajaran : 6</h6>
+                            </div>
+                            <div class="flex items-center gap-[4px]">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 8C4.78125 8 3 6.21875 3 4C3 1.8125 4.78125 0 7 0C9.1875 0 11 1.8125 11 4C11 6.21875 9.1875 8 7 8ZM8.5625 9.5C11.5625 9.5 14 11.9375 14 14.9375C14 15.5312 13.5 16 12.9062 16H1.0625C0.46875 16 0 15.5312 0 14.9375C0 11.9375 2.40625 9.5 5.40625 9.5H8.5625Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+                                <h6 class="font-medium text-gray-400">Murid : 198</h6>
+                            </div>
+                            <div class="flex items-center gap-[3px]">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.875 2.59375C18.875 2.6875 19.4688 5.25 17.75 7.6875C16.5625 9.4375 14.5938 10.6562 11.875 11.375C11.3125 11.5312 10.9062 12.0625 10.9062 12.6562C10.9062 13.4062 11.5 14 12.25 14H12.4062C13.2188 14 13.9062 14.6875 13.9062 15.5C13.9062 15.7812 13.7188 16 13.4375 16H6.46875C6.21875 16 6 15.7812 6 15.5C6 14.6875 6.65625 14 7.5 14H7.625C8.375 14 9 13.4062 8.96875 12.6562C8.96875 12.0625 8.59375 11.5312 8 11.375C5.28125 10.6562 3.3125 9.4375 2.15625 7.6875C0.5 5.25 1.09375 2.6875 1.09375 2.59375C1.1875 2.25 1.5 2 1.84375 2H5C4.96875 1.625 4.96875 1.28125 5 0.96875C5 0.4375 5.4375 0 6 0H13.9688C14.5312 0 14.9688 0.4375 14.9688 0.96875C15 1.28125 15 1.625 14.9688 2H18.125C18.4688 2 18.7812 2.25 18.875 2.59375ZM3.40625 6.875C4.125 7.96875 5.28125 8.8125 6.8125 9.4375C5.65625 7.625 5.1875 5.375 5 3.5H2.5C2.46875 4.25 2.53125 5.59375 3.40625 6.875ZM16.5625 6.875C17.4375 5.59375 17.5 4.25 17.4688 3.5H14.9688C14.7812 5.375 14.3125 7.625 13.1562 9.4375C14.6875 8.8125 15.8438 7.96875 16.5625 6.875Z"
+                                        fill="#080808" fill-opacity="0.25" />
+                                </svg>
+
+
+                                <h6 class="font-medium text-gray-400">Pemula</h6>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center pb-5">
+                            <a href=""
+                                class="flex items-center gap-2 bg-black mt-2.5 px-6 py-2.5 rounded-2xl w-fit font-medium text-[14px] text-white">
+                                Mulai Kursus
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 12.1822C1.71875 12.1822 1.46875 12.0884 1.28125 11.9009C0.875 11.5259 0.875 10.8697 1.28125 10.4947L5.5625 6.18219L1.28125 1.90094C0.875 1.52594 0.875 0.86969 1.28125 0.49469C1.65625 0.0884399 2.3125 0.0884399 2.6875 0.49469L7.6875 5.49469C8.09375 5.86969 8.09375 6.52594 7.6875 6.90094L2.6875 11.9009C2.5 12.0884 2.25 12.1822 2 12.1822Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <img src="/assets/images/Score.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card -->
+
+
+            </div>
+        </section>
+        <!-- kursus -->
+
+
+        <!-- Tetangkami -->
+        <section id="tentang" class="block mt-[150px]">
+            <center>
+                <h1 class="font-bold text-[40px]">Tentang <span
+                        class="bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 text-transparent">ACADEMY</span>
+                </h1>
+            </center>
+            <div class="flex items-center gap-6 mt-6">
+                <p class="bg-violet-300 p-5 rounded-2xl font-medium text-[14x]">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue
+                    mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem
+                    mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus
+                    proin.
+                    Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper
+                    morbi
+                    tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus
+                    mauris
+                    a diam maecenas sed enim. Velit ut tortor pretium</p>
+                <img src="/assets/images/logo.png" alt="">
+            </div>
+
+        </section>
+        <!-- Tetangkami -->
+
+        <hr class="-mx-[200px] mt-20 mb-15 border-1 border-gray-300 w-[1920px]">
+
+        <footer class="flex flex-col gap-20">
+            <div class="flex justify-between items-center">
+                <img src="/assets/images/Group 16 (1).png" alt="">
+                <div class="block">
+                    <h1 class="font-bold">Kantor Kami</h1>
+                    <p class="mt-2">Jl. Raya Serang KM 19, Serang, Banten</p>
+                </div>
+                <div class="block">
+                    <h1 class="font-bold">Hubungi Kami</h1>
+                    <p class="mt-2">0812-3456-7890</p>
+                </div>
+                <div class="block">
+                    <h1 class="font-bold">Social Media</h1>
+                    <div class="flex items-center gap-3 mt-2">
+                        <a class="fa fa-facebook" href=""></a>
+                        <a href="" class="fa fa-instagram"></a>
+                        <a href="" class="fa fa-twitter"></a>
+                        <a href="" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+                <div class="block">
+                    <h1 class="font-bold">Our Partner</h1>
+                    <div class="flex items-center gap-3 mt-2">
+                        <a href="" class="fa fa-google"></a>
+                        
+                        <a href="" class="fa fa-apple"></a>
+                        <a href="" class="fa fa-amazon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <span class="font-medium text-gray-400"> <center>Copyright © 2023 Academy</center></span>
+        </footer>
+    </div>
+</body>
+
+</html>
+</div>
+</body>
+
+</html>
